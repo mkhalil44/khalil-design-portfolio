@@ -539,7 +539,7 @@ X-large devices (1440px or larger)
   .container {
       padding: 0 15px;
       width: 1000px;
-      margin: 0px auto;
+      
   }
   #project .ul .li {
     margin: 0px auto;
