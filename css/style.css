@@ -193,7 +193,7 @@ a:active {
 .container {
   padding: 0 15px;
 }
-.container-nav {}
+
 
 .row-header {
   margin: 5px 0;
@@ -482,9 +482,13 @@ Large devices (1024px or larger)
 .container{
       padding: 0 15px;
       width: 1000px;
-      margin: 0px auto;
-  }
 
+  }
+  .nav-container {
+      padding: 0 15px;
+      width: 1000px;
+
+  }
 
 }
 
@@ -540,7 +544,11 @@ X-large devices (1440px or larger)
   #project .ul .li {
     margin: 0px auto;
   }
+  .nav-container {
+      padding: 0 15px;
+      width: 1000px;
 
+  }
 
 }
 
