@@ -1,0 +1,550 @@
+/*
+Colors used:
+Primary Color (ORANGE): #d46d18; RGBA: (212,109,27,1.0)
+Secondary Color (DARK GREY): #52514f; RGBA: (82,81,79,1.0)
+Secondary Color (LIGHT GREY): #bebcbb; RGBA: (212,188,187,1.0)
+
+font-family: 'Montserrat', sans-serif;
+*/
+
+header {
+  background-color: #ffffff;
+  position: relative;
+  padding: 0px;
+}
+
+nav {
+  width: auto;
+  margin-top: 4px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+nav>ul>li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.logo {
+  width: 35%;
+  height: auto;
+  padding-left: 2em;
+  padding-top: 0.8em;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #030E28;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+#about-image {
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  background: rgba(222, 233, 241, 0.8);
+  margin-right: 25px;
+  margin-left: 25px;
+}
+#about-image img {
+  border: 8px solid #030E28;
+  border-radius: 4px;
+  padding: 5px;
+  width: 45%;
+}
+
+a {
+  color: #030E28;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:hover, a:focus {
+  color: #030E28;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #A54C05;
+}
+.header > container {
+  max-width: 1200px;
+}
+.button {
+  background-color: #030E28;
+  border-radius: 28px;
+  border: 1px solid #030E28;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+.button:hover {
+  background-color: #E7B5D0;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #E7B5D0;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+.button.contact {
+  background-color: #ffffff;
+  border-radius: 28px;
+  border: 5px solid #030E28;
+  display: inline-block;
+  cursor: pointer;
+  color: #030E28;
+  font-family: sans-serif;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+.button.contact:hover {
+  background-color: #030E28;
+  text-decoration: none;
+  color: #ffffff;
+  border: 5px solid #030E28;
+  border-radius: 28px;
+}
+
+.button.contact:active {
+  position: relative;
+  top: 1px;
+}
+
+.container {
+  padding: 0 15px;
+}
+.container-nav {}
+
+.row-header {
+  margin: 5px 0;
+}
+
+.row-header::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#hero {
+  margin-bottom: 0px;
+}
+
+#work {
+  background: rgba(222, 233, 241, 0.8);
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#work img {
+  border: 8px solid #030E28;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  /* Animation */
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+#project {
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  background: rgba(222, 233, 241, 0.8);
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+#project img {
+  border: 8px solid #52514f;
+  border-radius: 4px;
+  padding: 5px;
+}
+#project ul {
+
+}
+
+#email-marketing {
+  margin-top: 2em;
+  background: rgba(231, 181, 208, 0.4);
+}
+#email-marketing img {
+  border: 8px solid #52514f;
+  border-radius: 4px;
+  padding: 5px;
+}
+.nav-container {
+  padding: 0 15px;
+}
+/*##################*/
+/*Top and Bottom Borders go Out */
+.topbottombordersout a {
+  position: relative;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #030E28;
+}
+
+.topbottombordersout a:before, .topbottombordersout a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #030E28;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.topbottombordersout a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+
+.topbottombordersout a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+
+.topbottombordersout a:hover:before, .topbottombordersout a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+  color: #030E28;
+}
+
+/*#################*/
+.spacer {
+  height: 50px;
+}
+
+.project-card h3 {
+  margin-bottom: 20px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 641px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .col-md-8 {
+    float: left;
+    width: 66.66%;
+  }
+
+  .col-md-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  nav {
+    width: auto;
+    margin-top: 4px;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+  nav > ul> li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  .col-lg-5 {
+    float: left;
+    width: 41.66%
+  }
+
+  .col-lg-7 {
+    float: left;
+    width: 58.33%
+  }
+
+  #project img {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.video{
+  width: 800px;
+  height: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  #project p {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #project h4 {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #project .ul {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #project .li {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+.container{
+      padding: 0 15px;
+      width: 1000px;
+      margin: 0px auto;
+  }
+
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  nav>ul {
+    margin: 1em 0;
+    float: right;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+  #project h4 {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #project .ul {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #project .li {
+    width: 800px;
+    display: block;
+    margin-left: 0px auto;
+    margin-right: auto;
+  }
+  #work img{
+    max-width: 600px;
+  }
+  .container {
+      padding: 0 15px;
+      width: 1000px;
+      margin: 0px auto;
+  }
+  #project .ul .li {
+    margin: 0px auto;
+  }
+
+
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {}
