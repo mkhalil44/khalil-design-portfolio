@@ -227,9 +227,7 @@ a:active {
   margin-bottom: 0px;
 }
 
-#work {
-  background: rgba(222, 233, 241, 0.8);
-}
+
 
 #work h2 {
   text-align: center;
@@ -540,7 +538,9 @@ X-large devices (1440px or larger)
   #project .ul .li {
     margin: 0px auto;
   }
-
+.col-lg-6 {
+  width: 50%;
+}
 
 }
 
