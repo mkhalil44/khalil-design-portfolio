@@ -427,7 +427,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 10px;
+    padding: 30px;
   }
 
   .col-md-8 {
@@ -535,7 +535,7 @@ Large devices (1024px or larger)
   }
 .container{
       padding: 0 15px;
-      width: 1500px;
+      width: 1000px;
       margin: 0px auto;
   }
   #hero img {
