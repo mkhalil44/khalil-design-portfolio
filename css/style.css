@@ -143,13 +143,10 @@ img {
   padding-right: 40px;
   padding-bottom: 15px;
   padding-left: 40px;
-  background: rgba(222, 233, 241, 0.8);
   margin-right: 25px;
   margin-left: 25px;
 }
 #about-image img {
-  border: 8px solid #030E28;
-  border-radius: 4px;
   padding: 5px;
   width: 60%;
 }
