@@ -11,22 +11,36 @@ header {
   background-color: #ffffff;
   position: relative;
   padding: 0px;
+  margin: 0px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+}
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.shell {
+  float: left;
+  width: 10%;
 
+}
 nav {
-  width: auto;
-  margin-top: 4px;
+  float: right;
 }
 
-nav>ul {
-  list-style-type: none;
+nav ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
-nav>ul>li {
+nav li {
   display: inline-block;
-  padding-right: 20px;
+  margin-left: 35px;
 }
 
 nav>ul>li a {
@@ -46,13 +60,6 @@ nav>ul>li a {
   padding-right: 10px;
 }
 
-.logo {
-  width: 35%;
-  height: auto;
-  padding-left: 2em;
-  padding-top: 0.8em;
-
-}
 
 * {
   box-sizing: border-box;
@@ -97,46 +104,6 @@ img {
   width: 100%;
 
 }
-#div1 {
-  animation-timing-function: linear;
-  animation-name: mymovie;
-  position: relative;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-#div2 {
-  animation-timing-function: ease;
-  animation-name: mymovie;
-  position: relative;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-#div3 {
-  animation-timing-function: ease-out;
-  animation-name: mymovie;
-  position: relative;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-
-
-}
-#div3 img {
-  width: 5%;
-}
-@keyframes mymovie{
-  from {left: -300px;}
-  to {left: 0px;}
-}
-#div4 {
-  position: relative;
-  animation-name: heroimage;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
-@keyframes heroimage{
-  from {top: -200px;}
-  to {top: 8px;}
-}
 
 #about-image {
   padding-top: 15px;
@@ -152,16 +119,16 @@ img {
 }
 
 a {
-  color: #030E28;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-weight: 400;
+  font-weight: 800;
   text-decoration: none;
   /* No underlining */
 }
 
 a:hover, a:focus {
-  color: #030E28;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: underline;
@@ -170,62 +137,49 @@ a:hover, a:focus {
 
 a:active {
   /* selected link */
-  color: #A54C05;
+  color: #ffffff;
 }
 .header > container {
   max-width: 1200px;
 }
+
 .button {
-  background-color: #030E28;
-  border-radius: 28px;
-  border: 1px solid #030E28;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: sans-serif;
+  border-radius: 4px;
+  background-color: #70C8BC;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
   font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #2f6627;
-}
-
-.button:hover {
-  background-color: #E7B5D0;
-  text-decoration: none;
-  color: #ffffff;
-  border: 1px solid #E7B5D0;
-}
-
-.button:active {
-  position: relative;
-  top: 1px;
-}
-
-.button.contact {
-  background-color: #ffffff;
-  border-radius: 28px;
-  border: 5px solid #030E28;
-  display: inline-block;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
   cursor: pointer;
-  color: #030E28;
-  font-family: sans-serif;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #2f6627;
+  margin: 5px;
 }
 
-.button.contact:hover {
-  background-color: #030E28;
-  text-decoration: none;
-  color: #ffffff;
-  border: 5px solid #030E28;
-  border-radius: 28px;
-}
-
-.button.contact:active {
+.button span {
+  cursor: pointer;
+  display: inline-block;
   position: relative;
-  top: 1px;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .container {
@@ -277,17 +231,17 @@ a:active {
 
 #hero {
   margin-bottom: 0px;
-  background:#030E28;
+  padding-top: 20px;
 
 }
-#hero h2 {
-  color:#ffffff;
+#hero h3 {
+  color:#000000;
   padding-left: 50px;
 }
 #hero h1 {
-  color:#E7B5D0;
+  color:#52514f;
   padding-left: 50px;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 0px;
 }
 }
@@ -295,7 +249,14 @@ a:active {
 #contact {
   background: #EDEAEA;
 }
-
+#work {
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
 #work h2 {
   text-align: center;
 }
@@ -304,7 +265,9 @@ a:active {
 
   padding: 5px;
 }
-
+hr.new1 {
+  border-radius: 5px #007DC7
+}
 .zoom {
   padding: 50px;
   transition: transform .2s;
@@ -334,15 +297,89 @@ a:active {
 
 }
 
+
+
+.row:after {
+  display: table;
+  clear: both;
+}
+.card-container {
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  column-gap: 2rem;
+  padding: 1rem;
+}
+.aboutimg {
+  shadow: 2px 4px 8px 3px Gainsboro;
+}
+.card {
+    box-shadow: 2px 4px 8px 3px Gainsboro;
+    border-radius: 10px;
+}
+.card:hover {
+ box-shadow: 4px 8px 16px 6px Gainsboro;;
+}
+.card img {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.card img:hover {
+  opacity: 0.3;
+
+}
+
+.text {
+  display: none;
+}
+.card_thumbnail:hover .text{
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  backface-visibility: hidden;
+}
+.card__description {
+  background-color: white;
+    padding: .5rem;
+    line-height: 1.6em;
+    border-radius: 0 0 10px 10px;
+}
 #email-marketing {
-  margin-top: 2em;
-  background: rgba(231, 181, 208, 0.4);
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  margin-right: 25px;
+  margin-left: 25px;
+
+}
+.row4 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column4 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column4 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 
-.nav-container {
-  padding: 0 15px;
-}
+
 /*##################*/
 /*Top and Bottom Borders go Out */
 .topbottombordersout a {
@@ -409,6 +446,21 @@ a:active {
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column4 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+	.shell {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 12%;
+  }
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -439,19 +491,36 @@ Medium devices (640px and larger)
     float: left;
     width: 33.33%;
   }
+  .nav-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .shell {
+    float: left;
+    width: 10%;
 
+  }
   nav {
-    width: auto;
-    margin-top: 4px;
+    float: right;
+    padding-top: 15px;
   }
 
-  nav>ul {
-    margin: 1em 0;
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
-  nav > ul> li {
-  display: inline-block;
-  padding-right: 20px;
-}
+
+  nav li {
+    display: inline-block;
+    margin-left: 35px;
+  }
+
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
@@ -481,7 +550,47 @@ Large devices (1024px or larger)
     float: left;
     width: 58.33%
   }
+  .nav-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .shell {
+    float: left;
+    width: 8%;
 
+  }
+  nav {
+    float: right;
+    padding-top: 25px;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 35px;
+  }
+  .aboutimg {
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+#work {
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
   #project img {
     width: 800px;
     display: block;
@@ -516,15 +625,14 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+  #email-marketing {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
-  nav>ul {
-    margin: 1em 0;
   }
 
-  nav>ul>li {
-    display: inline-block;
-    padding-right: 20px;
-  }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
@@ -549,14 +657,10 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  nav>ul {
-    margin: 1em 0;
-    float: right;
-  }
+  .shell {
+    float: left;
+    width: 6%;
 
-  nav>ul>li {
-    display: inline-block;
-    padding-right: 20px;
   }
 
   .navtoggle li:not(:last-child) {
